@@ -2,7 +2,7 @@ import { useState } from "react";
 import Head from 'next/head'
 
 
-const Gall = (props) => {
+export const Gall = (props) => {
   const [path, setPath] = useState(0);
   const count = props.info.images.length;
   const url = "http://gallant-feynman-d04cdd.netlify.app/";
@@ -51,7 +51,7 @@ const Gall = (props) => {
   );
 };
 
-const Im = (props) => {
+export const Im = (props) => {
   const [show, setShow] = useState(0);
   return (
     <>
@@ -85,7 +85,7 @@ const Im = (props) => {
   );
 };
 
-function App() {
+const  App = (props) =>  {
   const [showroom, setShowroom] = useState([
     {
       name: "الكل",
