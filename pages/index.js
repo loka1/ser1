@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import Head from 'next/head'
 
-import "./App.css";
 
 const Gall = (props) => {
   const [path, setPath] = useState(0);
   const count = props.info.images.length;
-  const url = "https://gallant-feynman-d04cdd.netlify.app/";
+  const url = "http://gallant-feynman-d04cdd.netlify.app/";
   const image = (
     <img
       className="cbp-popup-lightbox-img"
@@ -55,6 +55,17 @@ const Im = (props) => {
   const [show, setShow] = useState(0);
   return (
     <>
+    <style jsx>
+    {`
+
+.images{
+  width: 383px; left: 0px; top: 0px;
+
+      position: relative !important;
+    margin: 10px;
+}
+      `}
+    </style>
       {show ? <Gall onClose={() => setShow(false)} info={props.info} /> : ""}
       <div className="cbp-item motion images">
         <div className="cbp-item-wrapper">
@@ -99,6 +110,17 @@ function App() {
       ],
     },
     {
+      name: " جلابية",
+      images: [
+        "images/gallery/SWARI.jpg",
+        "images/gallery/SWARI1.jpg",
+        "images/gallery/SWARI2.jpg",
+        "images/gallery/SWARI3.jpg",
+        "images/gallery/SWARI4.jpg",
+        "images/gallery/SWARI5.jpg",
+      ],
+    },
+     {
       name: " سواية",
       images: [
         "images/gallery/Glabia.jpg",
@@ -114,25 +136,15 @@ function App() {
         "images/gallery/Glabia11.jpg",
       ],
     },
-    {
-      name: " جلابية",
-      images: [
-        "images/gallery/SWARI.jpg",
-        "images/gallery/SWARI1.jpg",
-        "images/gallery/SWARI2.jpg",
-        "images/gallery/SWARI3.jpg",
-        "images/gallery/SWARI4.jpg",
-        "images/gallery/SWARI5.jpg",
-      ],
-    },
   ]);
 
-  const [path, setPath] = useState(0);
+  const [path, setPath] = useState(0)
 
-  const url = "https://gallant-feynman-d04cdd.netlify.app/";
+  const url = "http://gallant-feynman-d04cdd.netlify.app/"
 
   const buttons = showroom.map((sh, index) => (
     <div
+    key={index}
       className={
         "cbp-filter-item " + (index === path && "cbp-filter-item-active")
       }
@@ -148,6 +160,55 @@ function App() {
 
   return (
     <section className="sec-padding">
+    
+    <Head>
+
+
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Yesteryear" rel="stylesheet"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="css/screen.css"/>
+    <link rel="stylesheet" href="css/onepage.css"/>
+
+    <link rel="stylesheet" href="css/theme-default.css" type="text/css"/>
+    <link rel="stylesheet" href="css/screen.css"/>
+    <link rel="stylesheet" href="css/corporate.css" type="text/css"/>
+
+    <link rel="stylesheet" href="css/hairsaloon.css" type="text/css"/>
+    <link rel="stylesheet" href="http://gallant-feynman-d04cdd.netlify.app/fonts/font-awesome/css/font-awesome.min.css" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="http://gallant-feynman-d04cdd.netlify.app/fonts/Simple-Line-Icons-Webfont/simple-line-icons.css" media="screen" />
+    <link rel="stylesheet" href="http://gallant-feynman-d04cdd.netlify.app/fonts/et-line-font/et-line-font.css"/>
+    <link rel="stylesheet" type="text/css" href="css/settings.css"/>
+    <link rel="stylesheet" type="text/css" href="css/layers.css"/>
+    <link rel="stylesheet" type="text/css" href="css/navigation.css"/>
+    <link href="css/owl.carousel.css" rel="stylesheet"/>
+    <link href="css/owl.theme.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css/cubeportfolio.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/smart-forms.css"/>
+
+    <link href="css/responsive-tabs.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/smk-accordion.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/jFlickrFeed/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/show-more.css"/>
+
+
+    <link rel="stylesheet" type="text/css" href="css/spectrum.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style-customizer.css"/>
+    <link rel="stylesheet/less" type="text/css" href="css/skin.less"/>
+
+
+
+    <link rel="stylesheet" type="text/css" href="css/rtl.css"/>
+
+    </Head>
+
       <div className="container">
         <div className="row">
           <div className="col-xs-12 nopadding">
@@ -170,7 +231,23 @@ function App() {
           </div>
         </div>
       </div>
+    
+      <style jsx>{`
+
+
+
+.cbp-wrapper{
+  position: unset !important;
+display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+
+
+        `}</style>
     </section>
+
+
   );
 }
 

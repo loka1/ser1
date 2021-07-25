@@ -1,0 +1,328 @@
+
+.selectpicker {
+ margin-top: 33px;
+ width: 110px;
+ height: 27px;
+}
+.header-section #menu {
+  float: right;
+}
+
+@media (max-width: 1000px){
+  .header-section #menu {
+    float: left;
+    width: 100%;
+    margin: 0;
+    direction: rtl;
+  }
+
+  .header-section #menu > ul li .arrow {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 5px;
+    left: 25px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+
+.header-section .col-sm-10, .header-section .col-sm-2 {
+  width: auto;
+  float: left;
+  padding: 0;
+  width: 100%;
+}
+
+
+@media only screen and (max-width: 1000px){
+.header-section .main-nav .nav.top-nav li {
+    float: right;
+}}
+
+@media only screen and (max-width: 1000px){
+.header-section.style4 .logo {
+    float: left;
+}}
+}
+.header-section .mod-menu {
+  position: relative;
+  z-index: 999;
+  text-align: end;
+}
+
+@media only screen and (max-width: 1000px){
+.header-section.style4 #menu ul li {
+    border-color: #f0be64;
+    text-align: initial;
+    width: 100%;
+    text-align: right;
+}}
+
+@media only screen and (max-width: 1000px){
+.header-section .main-nav .nav.top-nav {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 2;
+    text-align: left !important;
+}}
+
+
+@media only screen and (max-width: 1000px){
+.header-section.style4 #menu ul {
+    width: 100% !important;
+}}
+@media only screen and (max-width: 1000px){
+.header-section ul li.menu-icon a {
+    margin: 0px;
+    border: none;
+    padding: 14px !important;
+}}
+
+ @media (min-width: 768px){
+.navbar-nav > li {
+    float: right;
+}} 
+
+@media (min-width: 1000px){
+.navbar-nav>li {
+    float: right;
+}}
+
+@media (min-width: 768px){
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: left;
+}}
+
+
+.header-section ul li ul {
+  position: absolute;
+  top: 100%;
+  right: -20%;
+  margin-right: -115px;
+  background: #fff;
+  width: 230px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+.header-section ul li ul.dm-align-2 {
+  right: 120px;
+}
+.header-section.style4 ul li ul li a {
+  padding: 12px 23px;
+  float: none;
+}
+
+@media (min-width: 992px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: right;
+  }}
+  .header-section .main-nav .nav {
+    float: left !important;
+    font-size: large;
+    font-weight: 700;
+}
+.icon-plain-large.left, .icon-plain-medium.left, .icon-plain-small.left, .icon-plain-msmall.left, .icon-plain-tiny.left {
+float: right;
+margin: 0px 0px 0px 20px;
+}
+.text-box-right {
+display: block;
+padding: 0px 99px 0px 0px !important;
+margin: 0px;
+text-align: right;
+}
+.ce4-title-line-1.align-left {
+  width: 50px;
+  margin: 0px 0px 20px auto;
+}
+.ce4-feature-box-36 .title-line {
+width: 10%;
+height: 1px;
+float: right;
+margin: 8px 0 0 0;
+background-color: #101010;
+transition: all 0.3s ease-out 0s;
+}
+.col-centered {
+float: none;
+margin: 0 auto;
+}
+.cbp-l-filters-buttonCenter {
+  margin-bottom: 30px;
+  text-align: center;
+  direction: rtl;
+}
+.hs-feature-box-1 .img-box .text-box {
+  position: absolute;
+  width: 90%;
+  float: left;
+  left: 16px;
+  bottom: -218px;
+  padding: 45px;
+  background-color: #fff;
+  direction: rtl;
+}
+.hs-feature-box-1 .img-box .text-box .title-line {
+  width: 20%;
+  height: 2px;
+  float: right;
+  margin-right: auto;
+  background-color: #ecae3d;
+}
+
+
+.imgbox-dxlarge.left, .imgbox-dxlarge-2.left, .imgbox-xlarge.left, .imgbox-large.left, .imgbox-xmedium.left, .imgbox-medium.left, .imgbox-smedium.left, .imgbox-small.left, .imgbox-tiny.left, .imgbox-xtiny.left {
+  float: right;
+  margin: 0px 0px 0px 20px;
+}
+.fo-map {
+  background-size: 100%;
+  direction: rtl;
+}
+
+.item-holder {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  direction: rtl;
+}
+.fo-title-bottom-line {
+  width: 34px;
+  height: 2px;
+  color: #fff;
+  float: right;
+  display: block;
+  margin-bottom: 40px;
+  background-color: #fff;
+}
+.footer-title {
+  color: #fff;
+  float: right;
+}
+.footer-title-bottomstrip {
+  width: 10%;
+  height: 3px;
+  margin-left: 90%;
+  color: #fff;
+  float: left;
+  display: block;
+  margin-bottom: 40px;
+  background-color: #fff;
+}
+.footer-quick-links-4 {
+  width: 100%;
+  padding: 0 0 0 0;
+  margin: 0px;
+  direction: rtl;
+}
+.fo-appointment-form {
+  padding: 0px;
+  width: 100%;
+  float: right;
+  direction: rtl;
+}
+.img-text{
+    display: block;
+    padding: 0px 0px 0px 0px;
+    margin: 0px;
+    text-align: right;
+}
+.iconlist-2 .icon {
+  width: 18px;
+  height: 18px;
+  padding: 0px;
+  margin: 3px 0px 0px 0px;
+  float: right;
+  font-size: 14px;
+  text-align: center;
+  transform: rotate(180deg);
+  line-height: 15px;
+  color: #cc0000;
+  border-radius: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h3.less-mar-1,
+h4.less-mar-1,
+h5.less-mar-1 {
+  margin-bottom: 3px;
+  font-family: 'Cairo', sans-serif !important;
+}
+.font-weight-6 {
+  font-weight: 600;
+  font-family: 'Cairo', sans-serif;
+
+}
+.float-left{
+  float: left;
+  width: 50%;
+}
+
+.float-right{
+  float: right;
+  width: 50%;
+}
+
+.left{
+  float: left;
+}
+.sec-padding {
+  padding: 80px 0 0px 0;
+}
+a {
+  font-family: 'Tajawal', sans-serif;
+}
+.rev_slider .tp-mask-wrap .tp-caption, .rev_slider .tp-mask-wrap *:last-child, .wpb_text_column .rev_slider .tp-mask-wrap .tp-caption, .wpb_text_column .rev_slider .tp-mask-wrap *:last-child {
+  font-family: 'Tajawal', sans-serif;
+  text-align: end;
+
+}
+
+
+@media only screen and (min-width: 1001px){
+.header-section ul li:hover > a, .header-section ul li.active > a {
+    color: #ecae3d !important;
+}}
+
+
+.svg-icon{
+  width: 70px;
+  height: 40px;
+}
+
+.svg-icon:hover{
+  color: #ecae3d !important ;
+}
+.header-logo{
+  width: 163px;
+  height: 43px;
+}
+.footer-logo{
+  width: 163px;
+  height: 43px;
+  background:#f00;
+}
+.footer-logo img{
+  height: 100%;
+  width: 100%;
+}
+
+
+/*Points*/
+.point {
+  unicode-bidi: plaintext;
+  margin: 0 0 10px;
+}
+a:focus, a:hover {
+  color: #727272 !important;
+}
+/*button send*/
+.smart-forms .form-footer .button {
+  font-family: 'Tajawal', sans-serif;
+}
